@@ -1,0 +1,3 @@
+7d18871d62eb84f3ed54a17d1d074da61497f63c78d227dd46f70eed9c3992c4  artifacts/app-debug.apk
+87d1aec6a0cd625c6bee833faf79ca6af115261877e2a3eae9976e7824a5caee  artifacts/app-release.apk
+22734177211ddc2dd0608744cff87ae1e75bc272cd7a4573e2e5a18934a8ead2  artifacts/app-release.aab

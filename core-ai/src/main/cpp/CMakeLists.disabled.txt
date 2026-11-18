@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(aiclipai_disabled C)
+# Placeholder used when the build is configured with -PnativeAi=false.
+add_library(aiclipai SHARED stub.cpp)
+target_link_libraries(aiclipai log)

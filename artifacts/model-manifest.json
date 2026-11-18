@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-17",
+  "note": "Pinned in code at core-ai/src/main/kotlin/com/aiclipcreator/core/ai/ModelRegistry.kt. Digests were measured from the exact URLs below. Installation fails closed on mismatch.",
+  "models": [
+    {
+      "id": "whisper-tiny",
+      "file": "ggml-tiny.bin",
+      "purpose": "Multilingual speech-to-text (Hindi, English, Hinglish)",
+      "runtime": "whisper.cpp",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin",
+      "sha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21",
+      "sizeBytes": 77691713,
+      "license": "MIT (OpenAI Whisper weights)",
+      "ramMb": 900,
+      "abis": ["arm64-v8a", "x86_64", "armeabi-v7a"]
+    },
+    {
+      "id": "whisper-base",
+      "file": "ggml-base.bin",
+      "purpose": "Higher-accuracy multilingual speech-to-text",
+      "runtime": "whisper.cpp",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin",
+      "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe",
+      "sizeBytes": 147951465,
+      "license": "MIT (OpenAI Whisper weights)",
+      "ramMb": 1400,
+      "abis": ["arm64-v8a", "x86_64"]
+    },
+    {
+      "id": "vision-efficientnet-lite0",
+      "file": "efficientnet_lite0.tflite",
+      "purpose": "Scene / object labels used as a ranking signal",
+      "runtime": "LiteRT (TensorFlow Lite)",
+      "url": "https://storage.googleapis.com/mediapipe-models/image_classifier/efficientnet_lite0/float32/1/efficientnet_lite0.tflite",
+      "sha256": "6c7ab0a6e5dcbf38a8c33b960996a55a3b4300b36a018c4545801de3a3c8bde0",
+      "sizeBytes": 18582189,
+      "license": "Apache-2.0 (Google AI Edge / MediaPipe model zoo)",
+      "ramMb": 400,
+      "abis": ["arm64-v8a", "x86_64", "armeabi-v7a"]
+    },
+    {
+      "id": "audio-silero-vad",
+      "file": "silero_vad.onnx",
+      "purpose": "Speech / silence boundaries for chunked transcription",
+      "runtime": "ONNX Runtime Android",
+      "url": "https://raw.githubusercontent.com/snakers4/silero-vad/master/src/silero_vad/data/silero_vad.onnx",
+      "sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+      "sizeBytes": 2327524,
+      "license": "MIT (Silero)",
+      "ramMb": 200,
+      "abis": ["arm64-v8a", "x86_64", "armeabi-v7a"]
+    },
+    {
+      "id": "llm-qwen2.5-0.5b",
+      "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "purpose": "Optional on-device clip titles and descriptions",
+      "runtime": "llama.cpp (build with -PnativeLlm=true)",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+      "sizeBytes": 491400032,
+      "license": "Apache-2.0 (Qwen)",
+      "ramMb": 2000,
+      "abis": ["arm64-v8a"]
+    }
+  ]
+}
